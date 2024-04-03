@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Tag Browser
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-------------------------
+## Description
+Tag Browser is an application for browsing programming-related tags, utilizing the Stack Exchange API. The application allows users to search for tags, view their popularity, and other data.
 
-## Available Scripts
+## About Project 
+Tag Browser is built using React and Material-UI, offering a seamless user experience for exploring programming tags. Users can search for specific tags, view their popularity, and obtain detailed information about them. The application also features real-time updates, ensuring users have access to the latest data.
 
-In the project directory, you can run:
+Additionally, Tag Browser includes Storybook integration for component development and testing. Storybook provides a convenient environment for building, documenting, and testing UI components in isolation. This integration enhances development efficiency and ensures the consistency and quality of the user interface.
 
-### `npm start`
+## Screenshots
+![TagBrowserHeader](https://github.com/Bartek9090/tag-browser/assets/80546803/e6c29226-586b-44f9-b622-5492b70f95bf)
+![Table](https://github.com/Bartek9090/tag-browser/assets/80546803/339a1994-93f8-4207-b0d9-6b44023dd46c)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies:
+* [react-icons](https://react-icons.github.io/react-icons/) version: 4.3.1
+* [React](https://reactjs.org/) version: 18.2.0
+* Material-UI (v5.15.14)
+* axios (v1.6.8)
+* Storybook
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Features:
+Tag Browser offers the following features:
+* Tag Search: Users can search for specific programming tags.
+* Tag Popularity: Users can view the popularity of tags.
+* Real-time Updates: The application provides real-time updates for tag data.
+* Storybook Integration: Storybook integration for efficient component development and testing.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### How to Run
+In order to get a copy of this project and run it locally, first of all, make sure you already have node and npm installed in your system.
+Clone this repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+$ git clone https://github.com/{Your username}/tag-browser.git
+```
+After cloning the repo, go to its root directory and install dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`$ cd to file locaction` </br>
+`$ npm install` </br>
+Once the dependencies are installed, start the application,
 
-### `npm run eject`
+$ `npm start`</br>
+Then you will have access to application on  http://localhost:5173/  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Help
+If you have any problem with website please do not hesitate text to me.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Author
+Bartek9090 
+**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
