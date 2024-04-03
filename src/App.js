@@ -1,11 +1,19 @@
+import React from "react";
+import { MyContextProvider } from "./context/Context";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>I am clean project</h1>
-    </div>
+    <Router>
+      <MyContextProvider>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </MyContextProvider>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,49 @@
+.dataTableContainer {
+  background-color: #2c404c;
+  padding: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.css-1ex1afd-MuiTableCell-root {
+  font-size: 10rem;
+}
+
+.css-t89xny-MuiDataGrid-columnHeaderTitle {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 100vw;
+  letter-spacing: 1px;
+}
+
+/* used for styled number of rows below table */
+.css-levciy-MuiTablePagination-displayedRows {
+  color: white;
+}
+
+/* Paginacja */
+.MuiTablePagination-actions {
+  color: white;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:focus {
+  background-color: white;
+  color: #05090c;
+}
+.dataTableContainer .css-10botns-MuiInputBase-input-MuiFilledInput-input {
+  background-color: white;
+}
+
+.css-n2tfty-MuiDataGrid-root .MuiDataGrid-cellEmpty {
+  display: none;
+}
+.MuiDataGrid-filler .css-8yphpr {
+  height: 0;
+  display: none;
+}
+/* Easter Egg Dad Joke Edition 🐰🥚👨‍👧‍👦
+Yes, I agree, this solution is worse than my dad jokes. However, I still haven't found a better way to fix the problem below! */
+.MuiDataGrid-filler {
+  display: none !important;
+}
