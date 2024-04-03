@@ -8,6 +8,7 @@ export default function CustomizedDataTable({ columns }) {
   const defaultSortConfig = { field: "name", sort: "asc" };
   const [rowCount, setRowCount] = useState(-1);
   const [dataRows, setDataRows] = useState([]);
+  const [rowCountFromApi, setRowCountFromApi] = useState(0);
   const [pagination, setPagination] = useState({
     pageSize: 10,
     page: 0,
@@ -52,7 +53,20 @@ export default function CustomizedDataTable({ columns }) {
   useEffect(() => {
     async function fetchData() {
       await doRefreshData();
+      try {
+        const response = await fetch(
+          "https://api.stackexchange.com/2.3/tags?filter=total&site=stackoverflow"
+        );
+        const data = await response.json();
+        setRowCountFromApi(data.total);
+      } catch (error) {
+        console.error(
+          "Error retrieving incorrect amount of rows from the API:",
+          error
+        );
+      }
     }
+
     fetchData();
   }, [sortConfig, pagination]);
 
@@ -111,7 +125,7 @@ export default function CustomizedDataTable({ columns }) {
         paginationMode="server"
         disableColumnFilter
         paginationModel={pagination}
-        rowCount={65691} // https://api.stackexchange.com/2.3/tags?filter=total&site=stackoverflow
+        rowCount={rowCountFromApi}
         onPageSizeChange={handlePageSizeChange}
         onPaginationModelChange={(paginationConfig) => {
           console.log(paginationConfig);

@@ -27,6 +27,11 @@
   color: white;
 }
 
+.css-batk84-MuiInputBase-root-MuiFilledInput-root {
+  width: 7rem;
+  margin-bottom: 0.6rem;
+}
+
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:focus {
   background-color: white;
   color: #05090c;

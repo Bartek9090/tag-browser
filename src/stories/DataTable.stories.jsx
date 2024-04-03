@@ -9,8 +9,8 @@ export default {
 };
 
 const columns = [
-  { field: "name", headerName: "Name", flex: 1 },
-  { field: "popular", headerName: "Count", flex: 1 },
+  { field: "name", headerName: "Name" },
+  { field: "popular", headerName: "Count" },
 ];
 
 const Template = (args) => <CustomizedDataTable {...args} />;
